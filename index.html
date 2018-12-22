@@ -1,68 +1,215 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <style>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('background.');
+  min-height: 100%;
+}
+</style>
+<body>
 
-  body {
-    background-color: lightgreen;
-}  
+<!-- Sidebar with image -->
+<img src="BACKGROUND2.JPEG.jpg" class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-    </style>
-    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
-    </head>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#Examples" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Examples</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
 
-<body background="background.jpg">
-    <body id="asd">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
+  <!-- Menu icon to open sidebarCreating -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-        
-     
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>TaTToo ARTISTRY</b></h1>
+    <p>Creating Body Art</p>
+    <img src="BACKGROUND2.JPEG.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="BACKGROUND2.JPEG.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Begin Editing
+    </button>
+  </header>
 
-        <h2>Kates shed antics</h2>
-        <p>RESTORATIONS <img src="car.jpg" alt="car" align="middle"> project car</p>
-        <p>RESTORATIONS <img src="car2.jpg" width="770" alt="car" align="middle"> project car</p>
-              
-        
-        <script>
-        Pts.quickStart("asd", "#123");
+  <!-- Examples Section -->
+  <div class="w3-padding-32 w3-content" id="Examples">
+    <h2 class="w3-text-blue">Examples</h2>
+    <hr class="w3-opacity">
 
-//// Demo code starts (anonymous function wrapper is optional) ---
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="2.jpg" style="width:100%">
+        <img src="100pcs-brown-henna-tattoo-flower-feather.jpg" style="width:100%">
+        <img src="feminine_wrist_cover_up_nina_gem_sexy_tattoo_boksburg_johannesburg_01-1024x542.jpg" style="width:100%">
+      </div>
 
-var pts = [];
-var follower = new Pt(); // follows the pointer
+      <div class="w3-half">
+        <img src="Online-Tattoo-Name-Creator.png" style="width:100%">
+        <img src="cat.jpg" style="width:100%">
+        <img src="Tattoo-Stencil.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Examples Section -->
+  </div>
 
-space.add({
-  start: bound => {
-    pts = Create.gridCells(space.innerBound, 40, 20);
-    follower = space.center;
-  },
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-blue w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity w3-text-grey">
+    <p>SIMPLY USE THE EDITING TOOL TO DRAW UP A DESIGN OR EDIT ONE OF OUR UNIQUE PIECES 
+      FROM ONE OF OUR 5 VERY SPECIAL ARTISTS WE HAVE.
+      EDIT AND CHANGE EACH DESIGN HOW YOU WANT.
+      ADDING COLOUR, OVERLAYS, TEXT OR YOUR OWN DRAWING OR TOUCH UP.<P></P>
+      
+     <P></P> FOR COVER UP STENCILS CUSTOM MADE TO CHANGE YOUR ENTIRE CURRENT TATTOO, 
+      SIMPLY CLICK THE LINK BELOW OR SEND AN EMAIL.<P></P>
+      
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Artists
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">98%</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1,100+</span><br>
+        Designs
+      </div>
+    </div>
 
-  animate: (time, ftime) => {
-    follower = follower.add(space.pointer.$subtract(follower).divide(20));
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> OPEN EDITING TOOL
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Designer Art</li>
+          <li class="w3-padding-16">Editing</li>
+          <li class="w3-padding-16">--</li>
+          <li class="w3-padding-16">Professional stencil .pdf</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">Digital File</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">START</button>
+          </li>
+        </ul>
+      </div>
 
-    form.stroke("#123");
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Designer Art</li>
+          <li class="w3-padding-16">Editing</li>
+          <li class="w3-padding-16">Custom Made Coverup</li>
+          <li class="w3-padding-16">Professional stencil .pdf</li>
+          <li class="w3-padding-16">
+            <h2>$ 50</h2>
+            <span class="w3-opacity">Digital File</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">START</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  <!-- End About Section -->
+  </div>
 
-    // calculate the size and color of each cell based on its distance to the pointer
-    let rects = pts.map(p => {
-      let mag = follower.$subtract(Rectangle.center(p)).magnitude();
-      let scale = Math.min(1, Math.abs(1 - 0.7 * mag / space.center.y));
-      let r = Rectangle.fromCenter(
-        Rectangle.center(p),
-        Rectangle.size(p).multiply(scale)
-      );
-      form.fill(Color.HSLtoRGB(Color.hsl(scale * 270, 1, 0.5)).hex).rect(r);
-    });
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-blue" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+      <p></p>TaTToo ARTISTRY<p></p>
+           <p></p>Katherine Sharp<p></p>
+    </h2>
+    <hr class="w3-opacity">
 
-    form.fillOnly("#fff").point(space.pointer, 10, "circle");
-  }
-});
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Brisbane North, QLD</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 0429795651</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: OpenDesertDreams@gmail.com</p>
+    </div>
+    
 
-//// ----
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium"> <a href="" target="_blank" class="w3-hover-text-green">Katherine Sharp</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
 
-space
-  .bindMouse()
-  .bindTouch()
-  .play();
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
 </script>
 
-    </body>
-    </html>
+</body>
+</html>
